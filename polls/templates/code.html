@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Django</title>
+</head>
+<body onLoad="checkRefresh();">
+    <p>Your code is: {{ message }}</p>
+</body>
+</html>
+
+<script>
+    function checkRefresh(){
+        if (performance.navigation.type === performance.navigation.TYPE_RELOAD) {
+            console.info( "This page is reloaded" );
+            console.info("acsdvsdv12")
+            return window.location.replace = "{% url 'login' %}"
+        }
+
+    }
+
+</script>
